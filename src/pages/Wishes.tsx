@@ -7,23 +7,23 @@ import PageTransition from '@/components/PageTransition';
 
 const wishes = [
   {
-    text: "Kiki, every snowfall reminds me how gently you entered my life.",
+    text: "Kiki, the way you came into my life was quiet — but it changed more than you realize.",
     emphasis: "gently",
   },
   {
-    text: "This Christmas feels warmer… because you exist.",
+    text: "This Christmas doesn’t feel ordinary anymore.",
     emphasis: "warmer",
   },
   {
-    text: "If love had a season, it would feel exactly like this moment with you.",
+    text: "Moments like this make me understand what love is supposed to feel like.",
     emphasis: "love",
   },
   {
-    text: "You are my favorite gift, wrapped in kindness and tied with grace.",
+    text: "You matter to me more than you know.",
     emphasis: "favorite gift",
   },
   {
-    text: "Every star tonight seems to whisper your name.",
+    text: "Some nights make you think of one person. Tonight, it’s you.",
     emphasis: "your name",
   },
 ];
