@@ -2,13 +2,19 @@ import { useState, useRef, useEffect } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 
 const MusicToggle = () => {
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    audioRef.current = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3');
+    audioRef.current = new Audio('/audio/christmas-music.mp3');
     audioRef.current.loop = true;
     audioRef.current.volume = 0.3;
+    
+    // Autoplay music
+    audioRef.current.play().catch(() => {
+      // If autoplay fails (browser policy), set muted state
+      setIsMuted(true);
+    });
 
     return () => {
       if (audioRef.current) {
