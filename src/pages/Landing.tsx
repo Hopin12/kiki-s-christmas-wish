@@ -9,7 +9,21 @@ const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen overflow-hidden romantic-gradient vignette">
+    <div className="relative min-h-screen overflow-hidden vignette">
+      {/* Video Background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/videos/christmas-bg.mp4" type="video/mp4" />
+      </video>
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40" />
+      
       <Snowfall />
       <LightParticles />
       
