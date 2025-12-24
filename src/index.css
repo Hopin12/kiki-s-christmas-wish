@@ -1,96 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 8% 6%;
+    --foreground: 36 33% 92%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 12% 10%;
+    --card-foreground: 36 33% 92%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 12% 10%;
+    --popover-foreground: 36 33% 92%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 65% 45%;
+    --primary-foreground: 36 33% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 36 50% 70%;
+    --secondary-foreground: 0 8% 10%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 10% 15%;
+    --muted-foreground: 36 20% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 36 60% 75%;
+    --accent-foreground: 0 8% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 15% 20%;
+    --input: 0 15% 20%;
+    --ring: 0 65% 45%;
 
     --radius: 0.5rem;
 
+    /* Custom romantic colors */
+    --romantic-red: 0 65% 45%;
+    --romantic-red-deep: 0 70% 25%;
+    --romantic-red-glow: 0 65% 55%;
+    --champagne: 36 50% 70%;
+    --champagne-light: 36 60% 85%;
+    --warm-white: 36 33% 92%;
+    --blush: 350 40% 75%;
+    --gold: 42 75% 55%;
+    --gold-glow: 42 80% 65%;
+
+    /* Gradients */
+    --gradient-romantic: linear-gradient(135deg, hsl(0 70% 20%) 0%, hsl(0 8% 6%) 50%, hsl(0 70% 15%) 100%);
+    --gradient-gold-shimmer: linear-gradient(90deg, hsl(36 50% 70%), hsl(42 75% 55%), hsl(36 50% 70%));
+    --gradient-vignette: radial-gradient(ellipse at center, transparent 0%, hsl(0 8% 3% / 0.8) 100%);
+
+    /* Shadows & Glows */
+    --glow-romantic: 0 0 60px hsl(0 65% 45% / 0.3);
+    --glow-gold: 0 0 40px hsl(42 75% 55% / 0.4);
+    --glow-soft: 0 0 80px hsl(36 50% 70% / 0.2);
+
+    /* Typography */
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-script: 'Great Vibes', cursive;
+
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 0 8% 6%;
+    --foreground: 36 33% 92%;
+    --card: 0 12% 10%;
+    --card-foreground: 36 33% 92%;
+    --popover: 0 12% 10%;
+    --popover-foreground: 36 33% 92%;
+    --primary: 0 65% 45%;
+    --primary-foreground: 36 33% 95%;
+    --secondary: 36 50% 70%;
+    --secondary-foreground: 0 8% 10%;
+    --muted: 0 10% 15%;
+    --muted-foreground: 36 20% 60%;
+    --accent: 36 60% 75%;
+    --accent-foreground: 0 8% 8%;
+    --border: 0 15% 20%;
+    --input: 0 15% 20%;
+    --ring: 0 65% 45%;
   }
 }
 
@@ -99,7 +97,319 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  html {
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-serif);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer components {
+  .romantic-gradient {
+    background: var(--gradient-romantic);
+  }
+
+  .vignette {
+    position: relative;
+  }
+
+  .vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-vignette);
+    pointer-events: none;
+  }
+
+  .text-romantic {
+    color: hsl(var(--romantic-red-glow));
+    text-shadow: 0 0 30px hsl(var(--romantic-red) / 0.5);
+  }
+
+  .text-gold {
+    color: hsl(var(--champagne));
+    text-shadow: 0 0 20px hsl(var(--gold) / 0.4);
+  }
+
+  .text-script {
+    font-family: var(--font-script);
+  }
+
+  .text-serif {
+    font-family: var(--font-serif);
+  }
+
+  .glow-romantic {
+    box-shadow: var(--glow-romantic);
+  }
+
+  .glow-gold {
+    box-shadow: var(--glow-gold);
+  }
+
+  /* Snowflake styles */
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    color: hsl(var(--warm-white));
+    font-size: 1rem;
+    text-shadow: 0 0 10px hsl(var(--warm-white) / 0.8);
+    pointer-events: none;
+    z-index: 1000;
+    animation: snowfall linear infinite;
+    opacity: 0.8;
+  }
+
+  .light-particle {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: hsl(var(--champagne-light));
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999;
+    box-shadow: 0 0 10px hsl(var(--champagne) / 0.8),
+                0 0 20px hsl(var(--gold) / 0.4);
+    animation: float-particle linear infinite;
+  }
+
+  .heart-particle {
+    position: fixed;
+    color: hsl(var(--romantic-red-glow));
+    font-size: 0.75rem;
+    pointer-events: none;
+    z-index: 999;
+    text-shadow: 0 0 15px hsl(var(--romantic-red) / 0.6);
+    animation: float-heart ease-in-out infinite;
+    opacity: 0.6;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-slow {
+    animation: fadeInSlow 2s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+
+  .animate-letter-reveal {
+    animation: letterReveal 0.5s ease-out forwards;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: gentleFloat 6s ease-in-out infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  .animate-heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  .animate-zoom-slow {
+    animation: zoomSlow 20s ease-in-out infinite alternate;
+  }
+}
+
+/* Keyframes */
+@keyframes snowfall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float-particle {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-10px) translateX(-5px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(-30px) translateX(15px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes float-heart {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeInSlow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes letterReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(var(--romantic-red) / 0.4),
+                0 0 40px hsl(var(--romantic-red) / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(var(--romantic-red) / 0.6),
+                0 0 80px hsl(var(--romantic-red) / 0.3);
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes zoomSlow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Page transition */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 800ms ease-out, transform 800ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--romantic-red) / 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--romantic-red) / 0.6);
 }
