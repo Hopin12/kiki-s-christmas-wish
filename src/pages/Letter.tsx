@@ -34,75 +34,74 @@ const Letter = () => {
       </div>
 
       <PageTransition>
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-20">
-          {/* Letter container */}
-          <div className="max-w-2xl mx-auto w-full">
-            {/* Paper texture effect */}
-            <div className="relative bg-gradient-to-br from-muted/30 via-muted/20 to-muted/30 backdrop-blur-sm rounded-lg p-8 md:p-12 border border-champagne/10 shadow-[0_0_60px_hsl(var(--champagne)/0.1)]">
+         div  <div cla=sName="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 p
+                {/* Letter contai}
+           div  <div cla=sName="max-w-2xl mx-auto w-
+                  {/* Paper texture eff}
+             div  <div cla=sName="relative bg-gradient-to-br from-muted/30 via-muted/20 to-muted/30 backdrop-blur-sm rounded-lg p-8 md:p-12 border border-champagne/10 shadow-[0_0_60px_hsl(var(--champagne)/0
               
-              {/* Decorative corner */}
-              <div className="absolute top-4 right-4 text-champagne/20 text-2xl">✦</div>
-              <div className="absolute bottom-4 left-4 text-champagne/20 text-2xl">✦</div>
+                    {/* Decorative cor}
+               div  <div cla=sName="absolute top-4 right-4 text-champagne/20 text✦2xdiv✦
+               div  <div cla=sName="absolute bottom-4 left-4 text-champagne/20 text✦2xdiv✦
 
-              {/* Greeting */}
-              <div 
-                className={`transition-all duration-1500 ${
-                  showGreeting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-                }`}
-              >
-                <h2 className="font-script text-4xl md:text-5xl text-champagne mb-8">
+                    {/* Greet}
+               div 
+                      cla=sName={`transition-all duration-1
+                  showGreeting ? ing ? 'opacity-100 translat : -0' : 'opacity-0 translat
+                   
+               
+                 h2   <h2 cla=sName="font-script text-4xl md:text-5xl text-champagne 
                   Dear Kiki,
-                </h2>
-              </div>
+                  h2 
+                div 
 
-              {/* Letter body */}
-              <div 
-                className={`space-y-6 transition-all duration-2000 ${
-                  showBody ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-                }`}
-              >
-                <p className="font-serif text-lg md:text-xl leading-relaxed text-foreground/85 italic">
-                  This Christmas, I don't wish for anything…
+                    {/* Letter b}
+               div 
+                      cla=sName={`space-y-6 transition-all duration-2
+                  showBody ? ody ? 'opacity-100 translat : -0' : 'opacity-0 translat
+                   
+               
+                 p    <p cla=sName="font-serif text-lg md:text-xl leading-relaxed text-foreground/85 it
+                  This Christmas, I don’t feel the need to wish for anything…
                 </p>
-                <p className="font-serif text-lg md:text-xl leading-relaxed text-foreground/85 italic">
+                 p    <p cla=sName="font-serif text-lg md:text-xl leading-relaxed text-foreground/85 it
                   Because you already feel like my miracle.
-                </p>
-                <p className="font-serif text-lg md:text-xl leading-relaxed text-foreground/85 italic">
-                  Every moment with you is a gift I never knew I was waiting for. 
-                  You make ordinary days feel extraordinary, and this Christmas, 
-                  I find myself grateful for the simplest thing — that you exist in my world.
-                </p>
-                <p className="font-serif text-lg md:text-xl leading-relaxed text-foreground/85 italic">
-                  You are my peace, my joy, my reason to smile on the coldest nights.
-                </p>
-              </div>
+                  p 
+                 p    <p cla=sName="font-serif text-lg md:text-xl leading-relaxed text-foreground/85 it
+                  Being with you has a way of making things feel steady.
+                  Not louder. Not dramatic. Just right. And that’s something I don’t take lightly.
+                  p 
+                 p    <p cla=sName="font-serif text-lg md:text-xl leading-relaxed text-foreground/85 it
+                  You bring a calm into my life that I didn’t know I was missing.And on nights like these, that matters more than words.
+                  p 
+                div 
 
-              {/* Closing */}
-              <div 
-                className={`mt-10 transition-all duration-1500 ${
-                  showClosing ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-                }`}
-              >
-                <p className="font-serif text-lg md:text-xl text-foreground/85 italic mb-4">
+                    {/* Clos}
+               div 
+                      cla=sName={`mt-10 transition-all duration-1
+                  showClosing ? ing ? 'opacity-100 translat : -0' : 'opacity-0 translat
+                   
+               
+                 p    <p cla=sName="font-serif text-lg md:text-xl text-foreground/85 italic 
                   With all my love, forever,
-                </p>
-                <p className="font-script text-3xl md:text-4xl text-romantic">
-                  Your person ♥
-                </p>
-              </div>
+                  p 
+                 p    <p cla=sName="font-script text-3xl md:text-4xl text-roma
+                  Your Raghav ♥
+                  p 
+                div 
 
-              {/* Sparkle decorations */}
-              <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-lg">
-                {[...Array(6)].map((_, i) => (
-                  <div
-                    key={i}
-                    className={`absolute text-champagne/20 animate-sparkle ${showClosing ? 'opacity-100' : 'opacity-0'}`}
-                    style={{
-                      left: `${10 + Math.random() * 80}%`,
-                      top: `${10 + Math.random() * 80}%`,
-                      animationDelay: `${i * 0.3}s`,
-                      fontSize: `${0.4 + Math.random() * 0.4}rem`,
-                      transition: 'opacity 1s ease-out',
+                    {/* Sparkle decorati}
+               div  <div cla=sName="absolute inset-0 pointer-events-none overflow-hidden rounde
+                  ... {[...Arr.y(6)]., p( => i
+                   div
+                       = ik
+                          cla=sName={`absolute text-champagne/20 animate-sparshowClosing ? ing ? 'opacit : 00' : 'opacity
+                         =st
+                          : left: + Math. Math.ra * m() *,
+                         :  top: + Math. Math.ra * m() *,
+                            animatio: elai * ${i * ,
+                            fo: Size:  + Math. Math.ra * m() * 0.,
+              
                       transitionDelay: `${i * 0.2}s`,
                     }}
                   >
