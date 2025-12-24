@@ -8,23 +8,23 @@ import PageTransition from '@/components/PageTransition';
 const wishes = [
   {
     text: "Kiki, the way you came into my life was quiet — but it changed more than you realize.",
-    emphasis: "",
+    emphasis: "gently",
   },
   {
     text: "This Christmas doesn’t feel ordinary anymore.",
-    emphasis: "",
+    emphasis: "warmer",
   },
   {
     text: "Moments like this make me understand what love is supposed to feel like.",
-    emphasis: "",
+    emphasis: "love",
   },
   {
     text: "You matter to me more than you know.",
-    emphasis: "",
+    emphasis: "favorite gift",
   },
   {
     text: "Some nights make you think of one person. Tonight, it’s you.",
-    emphasis: "",
+    emphasis: "your name",
   },
 ];
 
@@ -161,4 +161,4 @@ const Wishes = () => {
   );
 };
 
-export default Wishes;
+export default Wishes;￼Enter
